@@ -11,7 +11,7 @@ figure.fotos{
     margin-left: auto;
     margin-right: auto;
     width:30%
-}
+    }
 
 /* Formatação da barra de navegação */
 nav#menu
@@ -54,39 +54,83 @@ a.ativo,a:hover{
     transition: .5s;
 }
 
-/* Formatação do texto */
-p {
-    text-align: justify;
-    text-indent: 20px;
-    padding-right: -10px;
+/* Formatação das divisões do site */
+section{
+    display:"block";
+    width: 500px;
+    float: left;
+    text-align: center;
+    margin-left: 300px;
     font-family: Arial, sans-serif;
-    margin-left: 10%;
-    font-size: 25px;
 }
 
-/* Formatação dos títulos*/
-h1 {
-    text-align: justify;
-    text-indent: 20px;
+aside{
+    display:"block";
+    width: 500px;
+    float: right;
+    text-align: center;
+    margin-right: 300px;
     font-family: Arial, sans-serif;
-    color:  #0082e6;
-    text-shadow: 2px 2px 4px #7ac0e9;
-    margin-left: 10%;
-    padding-right: -10px;
 }
 
-h4{
-    font-size: 12pt;
-}
-
-/* Formatação do rodapé */
 footer {
     clear: both;
     font-size: small;
     text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #0082e6;
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bolder;
+}
+
+/* Formatação do texto */
+h1 {
+    color:  #0082e6;
+    text-shadow: 2px 2px 4px #7ac0e9;
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 20pt;
+    text-align: left;
+    margin-left: 100px;
+    vertical-align: 300px
+}
+
+h3{
+    font-size: 16pt;
+}
+
+h4{
+    font-size: 12pt
+}
+
+p{
+    font-size: 14pt;
+}
+
+/* Formatação do formulário */
+fieldset{
+    text-align: justify;
+    background-color: #1b9bff;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+
+input{
+    width: 200pt;
+}
+
+input#mensagem{
+    width: 400pt;
+    height: 300pt;
+}
+
+input#enviar{
+    width: 100px;
+    color: #0082e6;
+    font-weight: bold;
 }
