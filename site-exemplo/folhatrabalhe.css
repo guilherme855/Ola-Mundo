@@ -42,7 +42,6 @@ nav#menu{
     background-color: #0082e6;
     height:70px;
     width: 100%;
-    
 }
 
 nav#menu 
@@ -59,41 +58,4 @@ a {
 a.ativo,a:hover{
     background: #1b9bff;
     transition: .5s;
-}
-
-/* Formatação do texto */
-p {
-    text-align: justify;
-    text-indent: 20px;
-    padding-right: -10px;
-    font-family: Arial, sans-serif;
-    margin-left: 10%;
-    font-size: 25px;
-}
-
-/* Formatação dos títulos*/
-h1 {
-    text-align: justify;
-    text-indent: 20px;
-    font-family: Arial, sans-serif;
-    color:  #0082e6;
-    text-shadow: 2px 2px 4px #7ac0e9;
-    margin-left: 10%;
-    padding-right: -10px;
-}
-
-h4{
-    font-size: 12pt;
-}
-
-/* Formatação do rodapé */
-footer {
-    clear: both;
-    font-size: small;
-    text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-color: #0082e6;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-weight: bolder;
 }
