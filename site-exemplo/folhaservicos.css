@@ -9,32 +9,59 @@
 /* Formatação do fundo da página */
 body{ 
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Formatação do logo Macrosoft */
-figure.fotos{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Formatação do header */
+header{
+    display: flex;
+    height: 85px;
+    flex-direction: row;
+}
+
+figure.logo{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 4%;
     width:30%
 }
 
-/* Formatação da barra de navegação */
-nav#menu
-ul{
+figure.linkedin{
+    display: flex;
+    margin-left: 45%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+figure.facebook{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+figure.instagram{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%
+}
+
+/* Formatação da barra de navegação*/
+nav#menu ul{
     list-style-type: none;
     text-transform: uppercase;
     position: absolute;
-    padding: -300%;
+    padding: 0%;
     margin: 20px;
     left: 0px;
 }
 
-nav#menu 
-li {
+nav#menu li {
    float: left;
    margin: 5px;
-   padding-left: 150px;
+   padding-left: 192px;
 }
 
 nav#menu{
@@ -44,21 +71,21 @@ nav#menu{
     width: 100%;
 }
 
-nav#menu 
-a {
+nav#menu a {
     color: white;
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 11pt;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: 7px 13px;
     border-radius: 3px;
 }
 
-a.ativo,a:hover{
+nav#menu a.ativo, a:hover{
     background: #1b9bff;
     transition: .5s;
 }
+
 
 /* Formatação do texto */
 p {
@@ -86,7 +113,7 @@ h4{
 }
 
 /* Formatação do rodapé */
-footer {
+footer{
     clear: both;
     font-size: small;
     text-align: center;
@@ -95,4 +122,53 @@ footer {
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bolder;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+footer .endereco{
+    display: flex;
+    flex-direction: column;
+    margin-left: 19%;
+
+}  
+
+footer .links{
+    min-width: fit-content;
+    margin-left: 7.5%;
+}
+
+footer .links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 12pt;
+        
+}
+
+footer .links ul li{
+    float: left;
+    margin-bottom: 7%;
+}
+
+footer .links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .social{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    height: fit-content;
+}
+
+footer .social .socialimg{
+    margin-right: 40%;
+
 }

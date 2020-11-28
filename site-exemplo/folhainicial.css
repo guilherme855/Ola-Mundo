@@ -4,37 +4,65 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+    
 }
 
 /* Formatação do fundo da página */
 body{ 
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Formatação do logo Macrosoft */
-figure.fotos{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Formatação do header */
+header{
+    display: flex;
+    height: 85px;
+    flex-direction: row;
+}
+
+figure.logo{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 4%;
     width:30%
 }
 
-/* Formatação da barra de navegação */
-nav#menu
-ul{
+figure.linkedin{
+    display: flex;
+    margin-left: 45%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+figure.facebook{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+figure.instagram{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%
+}
+
+/* Formatação da barra de navegação*/
+nav#menu ul{
     list-style-type: none;
     text-transform: uppercase;
     position: absolute;
-    padding: -300%;
+    padding: 0%;
     margin: 20px;
     left: 0px;
 }
 
-nav#menu 
-li {
+nav#menu li {
    float: left;
    margin: 5px;
-   padding-left: 150px;
+   padding-left: 192px;
 }
 
 nav#menu{
@@ -42,52 +70,135 @@ nav#menu{
     background-color: #0082e6;
     height:70px;
     width: 100%;
-    
 }
 
-nav#menu 
-a {
+nav#menu a {
     color: white;
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 11pt;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: 7px 13px;
     border-radius: 3px;
 }
 
-a.ativo,a:hover{
+nav#menu a.ativo, a:hover{
     background: #1b9bff;
     transition: .5s;
 }
 
-/* Formatação do texto */
-p {
-    text-align: justify;
-    text-indent: 20px;
-    padding-right: -10px;
-    font-family: Arial, sans-serif;
-    margin-left: 10%;
-    font-size: 25px;
+/*Formatação do banner*/
+
+.banner{
+    
 }
 
-/* Formatação dos títulos*/
-h1 {
-    text-align: justify;
-    text-indent: 20px;
+.banner #ibanner{
+    width: 100%;
+    height: 100%;
+    display: absolute;
+}
+
+
+/*Formatação dos títulos*/
+
+.texto ul li{
+    display: inline-block;
     font-family: Arial, sans-serif;
-    color:  #0082e6;
+    color: #0082e6;
     text-shadow: 2px 2px 4px #7ac0e9;
-    margin-left: 10%;
-    padding-right: -10px;
+    font-size: 17pt;
+    font-weight: bolder;
 }
 
-h4{
-    font-size: 12pt;
+.texto ul .linha1{
+    margin-right: 23.5%;
 }
+
+.texto ul .linha2{
+    margin-right: 27.5%;
+}
+
+.texto ul{
+    margin-left: 16%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+/*Formatação da section */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    font-family: 'Poppins', sans-serif;
+    flex-grow: 1;
+    
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform-style: preserve-3d;
+    
+}
+
+.container .box{
+    position: relative;
+    width: 450px;
+    height: 300px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background: #000;
+    transform-style: preserve-3d;
+}
+
+.container .box:hover{
+    box-shadow: 0 50px 80px rgba(0, 0, 0, .2);
+}
+
+.container .box .imgBx{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.container .box .contentBx{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    background: rgb(248, 246, 246);
+    transform: translateZ(20px) scaleY(0);
+    padding: 10px 25px;
+    transform-origin: top;
+    transition: 0.5s; 
+    transform-style: preserve-3d;
+}
+
+.container .box .contentBx p{
+    text-align: justify;
+}
+
+.container .box:hover .contentBx{
+    transform: translateZ(50px) scaleY(1);
+}
+
+.container .box .imgBx .dimg{
+    max-width: 500px;
+}
+
+
 
 /* Formatação do rodapé */
-footer {
+footer{
     clear: both;
     font-size: small;
     text-align: center;
@@ -96,4 +207,53 @@ footer {
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bolder;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+footer .endereco{
+    display: flex;
+    flex-direction: column;
+    margin-left: 19%;
+
+}  
+
+footer .links{
+    min-width: fit-content;
+    margin-left: 7.5%;
+}
+
+footer .links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 12pt;
+        
+}
+
+footer .links ul li{
+    float: left;
+    margin-bottom: 7%;
+}
+
+footer .links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .social{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    height: fit-content;
+}
+
+footer .social .socialimg{
+    margin-right: 40%;
+
 }
