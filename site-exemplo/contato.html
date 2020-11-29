@@ -3,31 +3,40 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="description" content="Macrosoft Group"/>
-        <meta name="keywords" content="Macrosoft, contato"/>
+        <meta name="keywords" content="Macrosoft, pagina inicial, index"/>
         <meta name="author"  content="macrosoft group"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Macrosoft: Contato</title>
+        <title>Macrosoft</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
         <!--Comando para chamar o css-->
         <link rel="stylesheet" href="folhacontato.css"/>
     </head>
+
     <body>
         <header>
-            <!-- Logo da Página--> 
-            <figure class="fotos">
-            <img src="imagens/logo.png" height="100" alt='Macrosoft badge'>
-            </figure><br /><br/>
+            <!--Logo da Página-->
+            <figure id="macimg">
+                <img src="imagens/logo.png"   height="50" alt='Macrosoft badge'>
+            </figure>
+            <figure id="lkdimg">
+                <a href="https://www.linkedin.com/" target="_blank"><img src="imagens/linkedin.jpg" height="30" alt='Linkedin'></a>
+            </figure>
+            <figure id="faceimg">
+                <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.jpg" height="30" alt='facebook'></a>
+            </figure>
+            <figure id="instaimg">
+                <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram.png" height="30" alt='instagram'></a>
+            </figure>
         </header>
+
         <!--Menu da Página-->
         <nav id="menu">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="nossaequipe.html">Nossa Equipe</a></li>
-                <li><a href="nossosservicos.html">Nossos Serviços</a></li>
-                <li><a class= "ativo" href="contato.html">Contato</a></li>
-                <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
-            </ul><br/>
-        </nav>
+                <li><a class="botmenu" href="index.html">Início</a></li>
+                <li><a class="botmenu" id="nservico" href="nossosservicos.html">Nossos Serviços</a></li>
+                <li><a class="botmenu" class= "ativo" id= "contato" href="contato.html">Contato</a></li>
+                <li><a class="botmenu" id= "trabalhe" href="trabalheconosco.html">Trabalhe Conosco</a></li>
+            </ul>
         <br/>
         <br/>  
         <section>
@@ -81,13 +90,43 @@
         </br>
         </aside>
         <!--Rodapé da Pagina-->
-        <footer>
-            </br>
-            <h4>Macrosoft Informática</h4>
-            <h4>Estrada dos Bandeirantes, 3500 - Jacarepaguá, Rio de Janeiro - RJ</h4>
-            <h4>Tel: (21) 3556-7529 &nbsp;&nbsp; Cel: (21) 96485-3934</h4>
-            <h5>Macrosoft Informática &copy; 2015 All rights reserved</h5>
-            </br>
-        </footer>
+        <div class="rodape">
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="nossaequipe.html">Nossa Equipe</a>
+                    </li>
+                    <li>
+                        <a href="nossosservicos.html">Nossos Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="trabalheconosco.html">Trabalhe Conosco</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="endereco">
+                <h4>Macrosoft Informática</h4>
+                <h4>Estrada dos Bandeirantes, 3500 - Jacarepaguá, Rio de Janeiro - RJ</h4>
+                <h4>Tel: (21) 3556-7529 &nbsp;&nbsp; Cel: (21) 96485-3934</h4>
+                <h5>Macrosoft Informática &copy; 2015 All rights reserved</h5>
+            </div>
+            <div class="social">
+                <figure class="socialimg">
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="imagens/linkedin3.png" height="30" alt='Linkedin'></a>
+                </figure>
+                <figure class="socialimg">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook3.png" height="30" alt='facebook'></a>
+                </figure>
+                <figure class="socialimg">
+                    <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram3.png"  height="30" alt='instagram'></a>
+                </figure>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-
     <head>
         <meta charset="utf-8"/>
         <meta name="description" content="Macrosoft Group"/>
@@ -16,30 +15,30 @@
     <body>
         <header>
             <!--Logo da Página-->
-            <figure class="logo">
-                <img src="imagens/logo.png" height="50" alt='Macrosoft badge'>
+            <figure id="macimg">
+                <img src="imagens/logo.png"   height="50" alt='Macrosoft badge'>
             </figure>
-            <figure class="linkedin">
+            <figure id="lkdimg">
                 <a href="https://www.linkedin.com/" target="_blank"><img src="imagens/linkedin.jpg" height="30" alt='Linkedin'></a>
             </figure>
-            <figure class="facebook">
+            <figure id="faceimg">
                 <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.jpg" height="30" alt='facebook'></a>
             </figure>
-            <figure class="instagram">
+            <figure id="instaimg">
                 <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram.png" height="30" alt='instagram'></a>
             </figure>
         </header>
-        
+
         <!--Menu da Página-->
         <nav id="menu">
             <ul>
-                <li><a class= "ativo" href="index.html">Início</a></li>
-                <li><a href="nossaequipe.html">Nossa Equipe</a></li>
-                <li><a href="nossosservicos.html">Nossos Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                <li><a class="botmenu" class= "ativo" href="index.html">Início</a></li>
+                <li><a class="botmenu" id="nservico" href="nossosservicos.html">Nossos Serviços</a></li>
+                <li><a class="botmenu" id= "contato" href="contato.html">Contato</a></li>
+                <li><a class="botmenu" id= "trabalhe" href="trabalheconosco.html">Trabalhe Conosco</a></li>
             </ul>
         </nav> 
+         
         
         <!--Banner-->
         <div class="banner" id="rbanner">
@@ -56,8 +55,7 @@
         </div>     
 
         <section>
-            <div class="container">
-                
+            <div class="divisao">
                 <div class="box">
                     <div class="imgBx">
                         <img src="imagens/company7.jpg" class="dimg">
@@ -83,17 +81,66 @@
                     </div>
                 </div>
             </div>
-           
         </section>
-    <!--Rodapé da Pagina-->
-        <footer>
+
+        <div class="equipe">
+            <p class="tituloEquipe">Nossa Equipe</p>
+            <div class="perfis">
+                <div class="perfilLeandro">
+                    <div class="foto">
+                        <figure>
+                            <img class="fotoPerfil" src="imagens/perfil.png" alt="fotoPerfil">
+                        </figure>
+                    </div>
+                    <div class="descricao">
+                        <p class="nomePerfil">Leandro Cardoso</p>
+                        <p class="dados">Curso: Ciência da Computação</br>Matrícula: 202009170412</p>
+                    </div>
+                </div>
+                <div class="perfilGuilherme">
+                    <div class="foto">
+                        <figure>
+                            <img class="fotoPerfil" src="imagens/perfil2.png" alt="fotoPerfil">
+                        </figure>
+                    </div>
+                    <div class="descricao">
+                        <p class="nomePerfil">Guilherme Pereira</p>
+                        <p class="dados">Curso: Análise de Sistemas</br>Matrícula: 00000000</p>
+                    </div>
+                </div>
+                <div class="perfilCaio">
+                    <div class="foto">
+                        <figure>
+                            <img class="fotoPerfil" src="imagens/perfil3.jpg" alt="fotoPerfil">
+                        </figure>
+                    </div>
+                    <div class="descricao">
+                        <p class="nomePerfil">Caio Vinícius</p>
+                        <p class="dados">Curso: Sistemas de Informação</br>Matrícula: 00000000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Rodapé da Pagina-->
+        <div class="rodape">
             <div class="links">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="nossaequipe.html">Nossa Equipe</a></li>
-                    <li><a href="nossosservicos.html">Nossos Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="nossaequipe.html">Nossa Equipe</a>
+                    </li>
+                    <li>
+                        <a href="nossosservicos.html">Nossos Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="trabalheconosco.html">Trabalhe Conosco</a>
+                    </li>
                 </ul>
             </div>
             <div class="endereco">
@@ -113,7 +160,7 @@
                     <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram3.png"  height="30" alt='instagram'></a>
                 </figure>
             </div>
-        </footer>
+        </div>
             
         <script type="text/javascript" src="vanilla-tilt.js"></script>
         <script type="text/javascript">

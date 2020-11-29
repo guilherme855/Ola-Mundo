@@ -11,53 +11,93 @@ body{
     background-color: white;
 }
 
-/* Formatação do logo Macrosoft */
-figure.fotos{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:30%
-    }
+/* Formatação do header */
 
-/* Formatação da barra de navegação */
-nav#menu
-ul{
-    list-style-type: none;
-    text-transform: uppercase;
-    position: absolute;
-    padding: -300%;
-    margin: 20px;
-    left: 0px;
+header{
+    height:80px;
+    overflow-wrap: normal;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
 }
 
-nav#menu 
-li {
-   float: left;
-   margin: 5px;
-   padding-left: 150px;
+#macimg{
+    position: relative;
+    left: 3%;
+    top: 0%
 }
+
+#lkdimg{
+    position: relative;
+    left: 71%;
+    top: 15%;
+}
+
+#faceimg{
+    position: relative;
+    left: 73%;
+    top: 15%;
+}
+
+#instaimg{
+    position: relative;
+    left: 75%;
+    top: 15%;
+}
+
+
+/* Formatação da barra de navegação*/
 
 nav#menu{
     display: block;
     background-color: #0082e6;
-    height:70px;
+    height:40px;
     width: 100%;
+    min-height: fit-content;
 }
 
-nav#menu 
-a {
+nav#menu ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    position: relative;
+    left: 0px;
+    margin-top: 0%;
+    top: 30%;
+}
+
+nav#menu li {
+   float: left;
+   margin: 0;
+   
+}
+
+nav#menu .botmenu {
     color: white;
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 11pt;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: 7px 13px;
-    border-radius: 3px;
 }
 
-a.ativo,a:hover{
+nav#menu .botmenu .ativo, a:hover{
     background: #1b9bff;
     transition: .5s;
+}
+
+nav#menu #nservico{
+    position: relative;
+    left: 5%;
+}
+
+nav#menu #contato{
+    position: relative;
+    left: 15%;
+}
+
+nav#menu #trabalhe{
+    position: relative;
+    left: 12%;
 }
 
 /* Formatação das divisões do site */
@@ -139,4 +179,77 @@ input#enviar{
     width: 100px;
     color: #0082e6;
     font-weight: bold;
+}
+
+/* Formatação do rodapé */
+.rodape{
+    clear: both;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #0082e6;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.rodape .endereco{
+    display: flex;
+    flex-direction: column;
+    margin-left: 19%;
+    font-size: 12pt;
+    position: relative;
+}  
+
+.rodape .endereco h5{
+    font-size: 8pt;
+}
+
+.rodape .endereco h4{
+    font-size: 12pt;
+}
+
+.rodape .links{
+    min-width: fit-content;
+    margin-left: 7.5%;
+    margin-top: 0%;
+}
+
+.rodape .links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 12pt;
+        
+}
+
+.rodape .links ul li{
+    float: left;
+    margin-bottom: 7%;
+}
+
+.rodape .links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.rodape .links ul li a:hover{
+    text-decoration: underline;
+}
+
+.rodape .social{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    position: relative;
+    top: 60px;
+}
+
+.rodape .social .socialimg{
+    margin-right: 40%;
 }

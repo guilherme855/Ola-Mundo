@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="description" content="Macrosoft Group"/>
-        <meta name="keywords" content="Macrosoft, trabalhe conosco"/>
+        <meta name="keywords" content="Macrosoft, pagina inicial, index"/>
         <meta name="author"  content="macrosoft group"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Macrosoft</title>
@@ -14,20 +14,104 @@
 
     <body>
         <header>
-            <!-- Logo da Página--> 
-            <figure class="fotos">
-            <img src="imagens/logo.png" height="100" alt='Macrosoft badge'>
-            </figure><br /><br/>
+            <!--Logo da Página-->
+            <figure id="macimg">
+                <img src="imagens/logo.png"   height="50" alt='Macrosoft badge'>
+            </figure>
+            <figure id="lkdimg">
+                <a href="https://www.linkedin.com/" target="_blank"><img src="imagens/linkedin.jpg" height="30" alt='Linkedin'></a>
+            </figure>
+            <figure id="faceimg">
+                <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.jpg" height="30" alt='facebook'></a>
+            </figure>
+            <figure id="instaimg">
+                <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram.png" height="30" alt='instagram'></a>
+            </figure>
         </header>
+
         <!--Menu da Página-->
         <nav id="menu">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="nossaequipe.html">Nossa Equipe</a></li>
-                <li><a href="nossosservicos.html">Nossos Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a class= "ativo" href="trabalheconosco.html">Trabalhe Conosco</a> </li>
-            </ul><br/>
-        </nav>
+                <li><a class="botmenu" href="index.html">Início</a></li>
+                <li><a class="botmenu" id="nservico" href="nossosservicos.html">Nossos Serviços</a></li>
+                <li><a class="botmenu" id= "contato" href="contato.html">Contato</a></li>
+                <li><a class="botmenu" class= "ativo" id= "trabalhe" href="trabalheconosco.html">Trabalhe Conosco</a></li>
+            </ul>
         <br/>
         <br/>
+        
+        <section>
+        
+            <h1>Por que trabalhar aqui?</h1><br/>
+            <p>A Macrosoft é o lugar ideal para aqueles que queiram revolucionar o mercado tecnológico brasileiro e buscam o 
+            desenvolvimento contínuo. Aqui, prezamos pela inovação e investimos nas capacidades de cada colaborador. ​ Aqui 
+            vivenciamos a união entre as culturas brasileira e de vários outros países, fazendo da Macrosoft uma das melhores 
+            empresas para se trabalhar no Brasil </p><br/>
+            <p>A Nossa Cultura é trabalhar sempre em cooperação com a Nossa Gente. Acreditamos que investir nos nossos 
+            colaboradores é trazer ainda mais qualidade aos nossos negócios e aos nossos produtos. Por isso, estamos sempre em 
+            busca de novos talentos dispostos a dividir esse sonho grande com a gente.</p>
+
+        </section>
+
+        <aside>
+            <form>
+                <fieldset>
+                    <div class="tudo">
+                        <div id="parte1">
+                            <p><label>Nome:* </label><br/><input type="text" id="nome" placeholder="Digite seu nome" required/></p>
+                            <p><label>Telefone: </label></br><input type="tel" id="tel" placeholder="Digite seu telefone"/></p>
+                            <p><label>Data de Nascimento: </label></br><input type="date" id="data"/></p>
+                            <p><label>Endereço: </label></br><input type="text" id="tel" placeholder="Digite seu endereço"/> </p>
+                            <p><label>Número: </label></br><input type="text" id="numero" placeholder="Número do endereço"/></p>
+                            <p><label>Complemento: </label></br><input type="text" id="complemento" placeholder="Digite o complemento"/></p>
+                            <p></label>Currículo:*  </label></br><textarea placeholder="Cole seu currículo aqui..."></textarea>
+                            <input type="submit" value="Enviar" id="enviar" required></p>
+                        </div>
+                        <div id="parte2">
+                            <p><label>E-mail:* </label></br><input type="email" id="email" placeholder="Digite seu email" required/></p>
+                            <p><label>Celular: </label></br><input type="tel" id="tel" placeholder="Digite seu Celular"/></p>
+                        </div> 
+                    </div>  
+                </fieldset> 
+            </form>
+        </aside>
+        
+        <!--Rodapé da Pagina-->
+        <div class="rodape">
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="nossaequipe.html">Nossa Equipe</a>
+                    </li>
+                    <li>
+                        <a href="nossosservicos.html">Nossos Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="trabalheconosco.html">Trabalhe Conosco</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="endereco">
+                <h4>Macrosoft Informática</h4>
+                <h4>Estrada dos Bandeirantes, 3500 - Jacarepaguá, Rio de Janeiro - RJ</h4>
+                <h4>Tel: (21) 3556-7529 &nbsp;&nbsp; Cel: (21) 96485-3934</h4>
+                <h5>Macrosoft Informática &copy; 2015 All rights reserved</h5>
+            </div>
+            <div class="social">
+                <figure class="socialimg">
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="imagens/linkedin3.png" height="30" alt='Linkedin'></a>
+                </figure>
+                <figure class="socialimg">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook3.png" height="30" alt='facebook'></a>
+                </figure>
+                <figure class="socialimg">
+                    <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram3.png"  height="30" alt='instagram'></a>
+                </figure>
+            </div>
+        </div>

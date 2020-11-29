@@ -12,86 +12,99 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
+    min-height:100%;
 }
 
 /* Formatação do header */
+
 header{
+    height:80px;
+    overflow-wrap: normal;
+    flex-wrap: wrap;
     display: flex;
-    height: 85px;
     flex-direction: row;
 }
 
-figure.logo{
-    display: flex;
-    margin-top: 1%;
-    margin-left: 4%;
-    width:30%
+#macimg{
+    position: relative;
+    left: 3%;
+    top: 0%
 }
 
-figure.linkedin{
-    display: flex;
-    margin-left: 45%;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+#lkdimg{
+    position: relative;
+    left: 71%;
+    top: 15%;
 }
 
-figure.facebook{
-    display: flex;
-    margin-left: 2%;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+#faceimg{
+    position: relative;
+    left: 73%;
+    top: 15%;
 }
 
-figure.instagram{
-    display: flex;
-    margin-left: 2%;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%
+#instaimg{
+    position: relative;
+    left: 75%;
+    top: 15%;
 }
+
 
 /* Formatação da barra de navegação*/
-nav#menu ul{
-    list-style-type: none;
-    text-transform: uppercase;
-    position: absolute;
-    padding: 0%;
-    margin: 20px;
-    left: 0px;
-}
-
-nav#menu li {
-   float: left;
-   margin: 5px;
-   padding-left: 192px;
-}
 
 nav#menu{
     display: block;
     background-color: #0082e6;
-    height:70px;
+    height:40px;
     width: 100%;
+    min-height: fit-content;
 }
 
-nav#menu a {
+nav#menu ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    position: relative;
+    left: 0px;
+    margin-top: 0%;
+    top: 30%;
+}
+
+nav#menu li {
+   float: left;
+   margin: 0;
+   
+}
+
+nav#menu .botmenu{
     color: white;
     text-decoration: none;
     font-size: 11pt;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: 7px 13px;
-    border-radius: 3px;
 }
 
-nav#menu a.ativo, a:hover{
+nav#menu .botmenu .ativo, a:hover{
     background: #1b9bff;
     transition: .5s;
 }
 
-/*Formatação do banner*/
-
-.banner{
-    
+nav#menu #nservico{
+    position: relative;
+    left: 5%;
 }
+
+nav#menu #contato{
+    position: relative;
+    left: 15%;
+}
+
+nav#menu #trabalhe{
+    position: relative;
+    left: 12%;
+}
+
+/*Formatação do banner*/
 
 .banner #ibanner{
     width: 100%;
@@ -134,10 +147,9 @@ section{
     margin-bottom: 5%;
     font-family: 'Poppins', sans-serif;
     flex-grow: 1;
-    
 }
 
-.container
+.divisao
 {
     position: relative;
     display: flex;
@@ -145,10 +157,10 @@ section{
     align-items: center;
     flex-direction: row;
     transform-style: preserve-3d;
-    
+    flex-wrap: wrap;
 }
 
-.container .box{
+.divisao .box{
     position: relative;
     width: 450px;
     height: 300px;
@@ -158,11 +170,11 @@ section{
     transform-style: preserve-3d;
 }
 
-.container .box:hover{
+.divisao .box:hover{
     box-shadow: 0 50px 80px rgba(0, 0, 0, .2);
 }
 
-.container .box .imgBx{
+.divisao .box .imgBx{
     position: absolute;
     top:0;
     left: 0;
@@ -170,7 +182,7 @@ section{
     height: 100%
 }
 
-.container .box .contentBx{
+.divisao .box .contentBx{
     position: absolute;
     top: 50%;
     left: 50px;
@@ -183,49 +195,113 @@ section{
     transform-style: preserve-3d;
 }
 
-.container .box .contentBx p{
+.divisao .box .contentBx p{
     text-align: justify;
 }
 
-.container .box:hover .contentBx{
+.divisao .box:hover .contentBx{
     transform: translateZ(50px) scaleY(1);
 }
 
-.container .box .imgBx .dimg{
+.divisao .box .imgBx .dimg{
     max-width: 500px;
 }
 
+/*Formatação da div Equipe*/
+.equipe{
+    background-color: #7ac0e9;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: white;
+    height: 570px;
+    max-height: fit-content;
+}
 
+.equipe .perfis{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 80%;
+    max-width: 100%;
+    overflow: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.equipe .tituloEquipe{
+    font-size: 35pt;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px, black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.equipe .perfis .foto .fotoPerfil{
+    width: 250px;
+}
+
+.equipe .perfis .perfilGuilherme{
+    position: relative;
+    left: 25%;
+}
+
+.equipe .perfis .perfilCaio{
+    position: relative;
+    left: 50%;
+}
+
+.equipe .perfis .nomePerfil{
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.equipe .perfis .dados{
+    text-align: center;
+    font-size: 13pt;
+}
 
 /* Formatação do rodapé */
-footer{
+.rodape{
     clear: both;
-    font-size: small;
     text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     background-color: #0082e6;
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bolder;
-    height: 175px;
     display: flex;
     flex-direction: row;
-    
+   
 }
 
-footer .endereco{
+.rodape .endereco{
     display: flex;
     flex-direction: column;
     margin-left: 19%;
-
+    font-size: 12pt;
+    position: relative;
 }  
 
-footer .links{
-    min-width: fit-content;
-    margin-left: 7.5%;
+.rodape .endereco h5{
+    font-size: 8pt;
 }
 
-footer .links ul{
+.rodape .endereco h4{
+    font-size: 12pt;
+}
+
+.rodape .links{
+    min-width: fit-content;
+    margin-left: 7.5%;
+    margin-top: 0%;
+}
+
+.rodape .links ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -234,26 +310,30 @@ footer .links ul{
         
 }
 
-footer .links ul li{
+.rodape .links ul li{
     float: left;
     margin-bottom: 7%;
 }
 
-footer .links ul li a{
+.rodape .links ul li a{
     text-decoration: none;
     color: white;
 }
 
-footer .social{
+.rodape .links ul li a:hover{
+    text-decoration: underline;
+}
+
+.rodape .social{
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.5%;
     height: fit-content;
+    position: relative;
+    top: 60px;
 }
 
-footer .social .socialimg{
+.rodape .social .socialimg{
     margin-right: 40%;
-
 }

@@ -4,6 +4,7 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+    
 }
 
 /* Formatação do fundo da página */
@@ -11,136 +12,180 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
+    min-height:100%;
 }
 
 /* Formatação do header */
+
 header{
+    height:80px;
+    overflow-wrap: normal;
+    flex-wrap: wrap;
     display: flex;
-    height: 85px;
     flex-direction: row;
 }
 
-figure.logo{
-    display: flex;
-    margin-top: 1%;
-    margin-left: 4%;
-    width:30%
+#macimg{
+    position: relative;
+    left: 3%;
+    top: 0%
 }
 
-figure.linkedin{
-    display: flex;
-    margin-left: 45%;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+#lkdimg{
+    position: relative;
+    left: 71%;
+    top: 15%;
 }
 
-figure.facebook{
-    display: flex;
-    margin-left: 2%;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+#faceimg{
+    position: relative;
+    left: 73%;
+    top: 15%;
 }
 
-figure.instagram{
-    display: flex;
-    margin-left: 2%;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%
+#instaimg{
+    position: relative;
+    left: 75%;
+    top: 15%;
 }
+
 
 /* Formatação da barra de navegação*/
-nav#menu ul{
-    list-style-type: none;
-    text-transform: uppercase;
-    position: absolute;
-    padding: 0%;
-    margin: 20px;
-    left: 0px;
-}
-
-nav#menu li {
-   float: left;
-   margin: 5px;
-   padding-left: 192px;
-}
 
 nav#menu{
     display: block;
     background-color: #0082e6;
-    height:70px;
+    height:40px;
     width: 100%;
+    min-height: fit-content;
 }
 
-nav#menu a {
+nav#menu ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    position: relative;
+    left: 0px;
+    margin-top: 0%;
+    top: 30%;
+}
+
+nav#menu li {
+   float: left;
+   margin: 0;
+   
+}
+
+nav#menu .botmenu{
     color: white;
     text-decoration: none;
     font-size: 11pt;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: 7px 13px;
-    border-radius: 3px;
 }
 
-nav#menu a.ativo, a:hover{
+nav#menu .botmenu .ativo, a:hover{
     background: #1b9bff;
     transition: .5s;
 }
 
-
-/* Formatação do texto */
-p {
-    text-align: justify;
-    text-indent: 20px;
-    padding-right: -10px;
-    font-family: Arial, sans-serif;
-    margin-left: 10%;
-    font-size: 25px;
+nav#menu #nservico{
+    position: relative;
+    left: 5%;
 }
 
-/* Formatação dos títulos */
-h1 {
-    text-align: justify;
-    text-indent: 20px;
-    font-family: Arial, sans-serif;
-    color: #0082e6;
-    text-shadow: 2px 2px 4px #7ac0e9;
-    margin-left: 7%;
-    padding-right: -10px;
+nav#menu #contato{
+    position: relative;
+    left: 15%;
 }
 
-h4{
-    font-size: 12pt
+nav#menu #trabalhe{
+    position: relative;
+    left: 12%;
+}
+
+
+/*Formatação do corpo*/
+
+div#foto1 {
+    position: absolute;
+    top: 330px;
+    left: 30px;
+}
+
+div#texto1 {
+    margin-left: 700px;
+}
+
+div#texto2 {
+    margin: 70px;
+    margin-right: 500px;
+}
+
+div#foto2 {
+    position: absolute;
+    top: 700px;
+    right: 90px;
+}
+
+div#foto3 {
+    position: absolute;
+    top: 1200px;
+    left: 30px;
+}
+
+div#texto3 {
+    margin-left: 700px;
+}
+
+div#texto4 {
+    margin: 150px;
+    margin-right: 700px;
+}
+
+div#foto4 {
+    position: absolute;
+    top: 1670px;
+    right: 500px;
 }
 
 /* Formatação do rodapé */
-footer{
+.rodape{
     clear: both;
-    font-size: small;
     text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     background-color: #0082e6;
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bolder;
-    height: 175px;
     display: flex;
     flex-direction: row;
-    
+   
 }
 
-footer .endereco{
+.rodape .endereco{
     display: flex;
     flex-direction: column;
     margin-left: 19%;
-
+    font-size: 12pt;
+    position: relative;
 }  
 
-footer .links{
-    min-width: fit-content;
-    margin-left: 7.5%;
+.rodape .endereco h5{
+    font-size: 8pt;
 }
 
-footer .links ul{
+.rodape .endereco h4{
+    font-size: 12pt;
+}
+
+.rodape .links{
+    min-width: fit-content;
+    margin-left: 7.5%;
+    margin-top: 0%;
+}
+
+.rodape .links ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -149,26 +194,30 @@ footer .links ul{
         
 }
 
-footer .links ul li{
+.rodape .links ul li{
     float: left;
     margin-bottom: 7%;
 }
 
-footer .links ul li a{
+.rodape .links ul li a{
     text-decoration: none;
     color: white;
 }
 
-footer .social{
+.rodape .links ul li a:hover{
+    text-decoration: underline;
+}
+
+.rodape .social{
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.5%;
     height: fit-content;
+    position: relative;
+    top: 60px;
 }
 
-footer .social .socialimg{
+.rodape .social .socialimg{
     margin-right: 40%;
-
 }

@@ -3,116 +3,130 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="description" content="Macrosoft Group"/>
-        <meta name="keywords" content="Macrosoft, nossos serviços"/>
+        <meta name="keywords" content="Macrosoft, pagina inicial, index"/>
         <meta name="author"  content="macrosoft group"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Macrosoft: Nossos Serviços</title>
+        <title>Macrosoft</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
         <!--Comando para chamar o css-->
-        <link rel="stylesheet" href="folhaservicos.css"/>
+        <link rel="stylesheet" href="folhainicial.css"/>
     </head>
-    
+
     <body>
-        <header>    
+        <header>
             <!--Logo da Página-->
-            <figure class="logo">
-                <img src="imagens/logo.png" height="50" alt='Macrosoft badge'>
+            <figure id="macimg">
+                <img src="imagens/logo.png"   height="50" alt='Macrosoft badge'>
             </figure>
-            <figure class="linkedin">
+            <figure id="lkdimg">
                 <a href="https://www.linkedin.com/" target="_blank"><img src="imagens/linkedin.jpg" height="30" alt='Linkedin'></a>
             </figure>
-            <figure class="facebook">
+            <figure id="faceimg">
                 <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.jpg" height="30" alt='facebook'></a>
             </figure>
-            <figure class="instagram">
+            <figure id="instaimg">
                 <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram.png" height="30" alt='instagram'></a>
             </figure>
         </header>
+
         <!--Menu da Página-->
         <nav id="menu">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="nossaequipe.html">Nossa Equipe</a></li>
-                <li><a class= "ativo" href="nossosservicos.html">Nossos Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
-            </ul><br/>
-        </nav>
+                <li><a class="botmenu" href="index.html">Início</a></li>
+                <li><a class="botmenu" class= "ativo" id="nservico" href="nossosservicos.html">Nossos Serviços</a></li>
+                <li><a class="botmenu" id= "contato" href="contato.html">Contato</a></li>
+                <li><a class="botmenu" id= "trabalhe" href="trabalheconosco.html">Trabalhe Conosco</a></li>
+            </ul>
+        </nav> 
         
         <!--Engenharia-->
-        <table>
-            <tr>
-            <td><img src="imagens/redes-removebg-preview.png" alt="Engenharia de redes"height="200"/></td>       
-            <td><h1>Engenharia e administração de redes</h1>   
-            <p>- Executada através de um minucioso estudo do melhor aproveitamento do espaço físico, melhor rendimento na transmissão dos dados, o projeto de engenharia de redes é de extrema importância para qualquer empresa. </p></td>
-            </tr>
-        </table> 
-        <br/>
-        <br/>
-        <br/> 
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         
-        <!--Manutenção-->
-        <table>
-            <tr>
-            <td><h1>Implementação e manutenção de servidores</h1>   
-            <p>- Seja para pequenas, médias ou grandes empresas, temos vasta experiência em implementação de servidores.<br />
-            - Domínio completo dos sistemas UNIX e WINDOWS <br />
-            - Virtualização de servidores </p></td>
-            <td><img src="imagens/servidor-removebg-preview.png" alt="Servidor"  height="300"/></td><br/><br/><br/>
-            </tr>
-        </table> 
-        <br/>
-        <br/>
-        <br/> 
-        <br/>
+        <div id="foto1">
+            <img src="imagens/redes-removebg-preview.png" alt="Engenharia de redes"height="200"/>  </div>
     
-
-        <!--Equipamentos-->
-        <table>
-            <tr>
-            <td><img src="imagens/manutencao-removebg-preview.png" alt="Manutenção"height="300"/></td>
-            <td><h1>Manutenção de todos os equipamentos de informática</h1>
-            <p>- Nobreaks e estabilizadores<br />
-            - Impressoras, desde as matriciais até as mais modernas multifuncionais do mercado<br />
-            - Monitores e Cpu's em geral </p></td>
-            <br/><br/><br/>
-            </tr>
-        </table> 
-        <br/>
-        <br/>
-        <br/> 
-        <br/>
-
-
-        <!--Venda-->
-        <table>
-            <tr>
-            <td><h1>Venda de equipamentos</h1>
-            <p> -Servidores<br />
+            <div id="texto1">
+                <h1>Engenharia e administração de redes</h1>   
+                <p>- Executada através de um minucioso estudo do melhor aproveitamento do espaço físico, melhor rendimento na transmissão dos dados, o projeto de engenharia de redes é de extrema importância para qualquer empresa. </p>
+            </div>
+            <br/>
+            <br/>
+            <br/> 
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             
-            - Equipamentos de rede<br />
-            - Computadores, periféricos e acessórios em geral </p>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td><img src="imagens/perifericos-removebg-preview.png" alt="Venda de equipamentos"height="300"/></td><br/><br/><br/>
-            </tr>
-        </table> 
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+            <!--Manutenção-->
+            
+            <div id="texto2">
+            <h1>Implementação e manutenção de servidores</h1>   
+                <p>- Seja para pequenas, médias ou grandes empresas, temos vasta experiência em implementação de servidores.<br />
+                - Domínio completo dos sistemas UNIX e WINDOWS <br />
+                - Virtualização de servidores </p></div>
+    
+                 <div id="foto2">
+                <img src="imagens/servidor-removebg-preview.png" alt="Servidor"  height="300"/><br/><br/><br/>
+            </div>
+            
+            <br/>
+            <br/>
+            <br/> 
+            <br/>
+        
+    
+            <!--Equipamentos-->
+            <div id="foto3">
+            <img src="imagens/manutencao-removebg-preview.png" alt="Manutenção"height="300"/></div>
+            
+               
+            <div id="texto3">
+            <h1>Manutenção de todos os equipamentos de informática</h1>
+                <p>- Nobreaks e estabilizadores<br />
+                - Impressoras, desde as matriciais até as mais modernas multifuncionais do mercado<br />
+                - Monitores e Cpu's em geral </p></div>
+    
+                <br/><br/><br/> 
+            <br/>
+            <br/>
+            <br/> 
+            <br/>
+    
+    
+            <!--Venda-->
+            
+            <div id="texto4">
+                <td><h1>Venda de equipamentos</h1>
+                <p> -Servidores<br />
+                
+                - Equipamentos de rede<br />
+                - Computadores, periféricos e acessórios em geral </p></div>
+                
+                <div id="foto4">
+                <img src="imagens/perifericos-removebg-preview.png" alt="Venda de equipamentos"height="300"/><br/><br/><br/></div>
+                 
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         <!--Rodapé da Pagina-->
-        <footer>
+        <div class="rodape">
             <div class="links">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="nossaequipe.html">Nossa Equipe</a></li>
-                    <li><a href="nossosservicos.html">Nossos Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="nossaequipe.html">Nossa Equipe</a>
+                    </li>
+                    <li>
+                        <a href="nossosservicos.html">Nossos Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="trabalheconosco.html">Trabalhe Conosco</a>
+                    </li>
                 </ul>
             </div>
             <div class="endereco">
@@ -132,7 +146,7 @@
                     <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram3.png"  height="30" alt='instagram'></a>
                 </figure>
             </div>
-        </footer>
+        </div>
         
     </body>
 </html>
