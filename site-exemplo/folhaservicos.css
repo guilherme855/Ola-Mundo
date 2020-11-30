@@ -107,46 +107,65 @@ nav#menu #trabalhe{
 
 /*Formatação do corpo*/
 
-div#foto1 {
-    position: absolute;
-    top: 330px;
-    left: 30px;
+.container1{
+    background-color: #a8bcf0;
 }
 
-div#texto1 {
-    margin-left: 700px;
+.container2{
+    background-color: #56619f;
 }
 
-div#texto2 {
-    margin: 70px;
-    margin-right: 500px;
+.container3{
+    background-color: #a8a8e6;
 }
 
-div#foto2 {
-    position: absolute;
-    top: 700px;
-    right: 90px;
+.container4{
+    background-color: #5b77b9;
 }
 
-div#foto3 {
-    position: absolute;
-    top: 1200px;
-    left: 30px;
+.dev{
+    display: flex;
+    height: 350px;
+    align-items: center;
+    position:relative;
+    left:1%;
 }
 
-div#texto3 {
-    margin-left: 700px;
+.engenharia{
+    display: flex;
+    height: 350px;
+    align-items: center;
+    position:relative;
+    left:1%;
 }
 
-div#texto4 {
-    margin: 150px;
-    margin-right: 700px;
+.manutencao{
+    display: flex;
+    height: 350px;
+    align-items: center;
+    position:relative;
+    left:1%;
 }
 
-div#foto4 {
-    position: absolute;
-    top: 1670px;
-    right: 500px;
+.equipamentos{
+    display: flex;
+    height: 350px;
+    align-items: center;
+    position:relative;
+    left:1%;
+}
+
+.servtxt{
+    color: aliceblue;
+    font-weight: bolder;
+    position: relative;
+    left: 1%;
+    width: 30%;
+    
+}
+
+.shadow{
+    text-shadow: 2px 2px 2px grey;
 }
 
 /* Formatação do rodapé */
@@ -160,7 +179,7 @@ div#foto4 {
     font-weight: bolder;
     display: flex;
     flex-direction: row;
-   
+    text-shadow: 2px 2px 2px grey;
 }
 
 .rodape .endereco{

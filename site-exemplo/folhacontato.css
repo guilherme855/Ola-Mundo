@@ -192,6 +192,7 @@ input#enviar{
     font-weight: bolder;
     display: flex;
     flex-direction: row;
+    text-shadow: 2px 2px 2px grey;
    
 }
 
@@ -226,14 +227,15 @@ input#enviar{
         
 }
 
-.rodape .links ul li{
+.rodape .links ul .lirod{
     float: left;
     margin-bottom: 7%;
 }
 
-.rodape .links ul li a{
+.rodape .links ul .lirod .arod{
     text-decoration: none;
     color: white;
+    margin-bottom: 7%;
 }
 
 .rodape .links ul li a:hover{

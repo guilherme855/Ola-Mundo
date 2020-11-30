@@ -109,7 +109,7 @@ nav#menu #trabalhe{
 .banner #ibanner{
     width: 100%;
     height: 100%;
-    display: absolute;
+    
 }
 
 
@@ -118,8 +118,8 @@ nav#menu #trabalhe{
 .texto ul li{
     display: inline-block;
     font-family: Arial, sans-serif;
-    color: #0082e6;
-    text-shadow: 2px 2px 4px #7ac0e9;
+    color: white;
+    text-shadow: 2px 2px grey;
     font-size: 17pt;
     font-weight: bolder;
 }
@@ -140,7 +140,11 @@ nav#menu #trabalhe{
 
 /*Formatação da section */
 
-section{
+.meiuca{
+    background-color:#53a0cf
+}
+
+.contemcaixas{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,6 +220,7 @@ section{
     color: white;
     height: 570px;
     max-height: fit-content;
+    text-shadow: 2px 2px 2px grey;
 }
 
 .equipe .perfis{
@@ -276,6 +281,7 @@ section{
     font-weight: bolder;
     display: flex;
     flex-direction: row;
+    text-shadow: 2px 2px 2px grey;
    
 }
 

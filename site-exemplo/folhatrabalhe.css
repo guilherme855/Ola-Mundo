@@ -8,9 +8,7 @@
 
 /* Formatação do fundo da página */
 body{ 
-    background-color: white;
-}
-
+}   
 /* Formatação do header */
 
 header{
@@ -101,13 +99,19 @@ nav#menu #trabalhe{
 }
 
 /* Formatação das divisões do site */
+
 section{
-    display:"block";
+    display:"flex";
     width: 500px;
     float: left;
     text-align: center;
     margin-left: 5%;
     font-family: Arial, sans-serif;
+    
+}
+
+#pqtrab{
+    margin-top: 20%;
 }
 
 aside{
@@ -197,7 +201,7 @@ input#enviar{
     font-weight: bolder;
     display: flex;
     flex-direction: row;
-   
+    text-shadow: 2px 2px 2px grey;
 }
 
 .rodape .endereco{
